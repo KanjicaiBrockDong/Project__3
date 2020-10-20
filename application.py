@@ -63,11 +63,12 @@ def load_model():
 	
     # model = keras.models.load_model('C:/ShankersDocs/EDUCATION/RICE_Bootcamp_DataAnalytics/final_project/new_flower_project/model_2')
 
-
+try:
     model = keras.models.load_model("mobilenet_model_trained_80_20")
-    # model = keras.models.load_model('C:/ShankersDocs/EDUCATION/RICE_Bootcamp_DataAnalytics/FinalProject_Img_Recognition_Flowers/Final_RICEproject_ImageRecognition_flowers/mobilenet_model_90_10')
 
- 
+except Exception as e:
+    print('model load error')
+    raise e	
 	
 
 def prepare_image(image, target):
@@ -132,7 +133,6 @@ def predict():
 
 	# return the data dictionary as a JSON response
 	return flask.jsonify(data)
-	return predict
 
 # if this is the main thread of execution first load the model and
 # then start the server
@@ -140,4 +140,5 @@ if __name__ == "__main__":
 	print(("* Loading Keras model and Flask starting server..."
 		"please wait until server has fully started"))
 	load_model()
+
 	app.run()
