@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  font-family: "Heebo", sans-serif;
+}
+
+.landing {
+  min-height: 100vh;
+  background: url("../images/flowers-hero.jpg");
+  background-size: cover;
+  padding: 0rem 5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  padding-left: 10rem;
+  font-size: 1.2rem;
+}
+#logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.big-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  color: rgb(61, 61, 61);
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background: rgb(97, 105, 109);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+  .search-pic-container a img {
+    display:block;
+	overflow:hidden;
+	vertical-align:middle;
+	
+	max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;	
+}
+.search-pic-bar { margin: 0px 10px 15px 10px; background-color:#88856f; padding:0px 10px 4px 10px; vertical-align:middle; max-width:182px  } 
+.search-block {height:235px;}
+
+.form-inline {
+    display: -ms-flexbox;
+    display: inline;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+	align-items: center}
+	
+.imgUp {
+	margin-bottom: 15px;
+	max-width: 100%;
+	margin-bottom:15px}	
+.figure-caption {
+	font-size: 200%;
+	color: #cc4b37;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif}
+	.upload-images{
+		margin-top: 1rem;
+	
+	}
+	
+	
+.js--image-preview {
+	height: 225px;
+	 width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-image: url("");
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}	
+.fa-upload{
+	font-size: 2.5rem;
+	color: whitesmoke;
+	margin-top: 1rem;
+	top: calc(50% - 2.5rem);
+	left: calc(50% - 1.25rem);
+	position: absolute;
+	z-index: 3;
+	  }	
